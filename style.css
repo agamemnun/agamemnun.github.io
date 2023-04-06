@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    animation-name: colors;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome {
+    color: white;
+    font-size: 128px;
+    font-family: fantasy;
+}
+
+.welcome:hover {
+    animation-name: font-size;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colors {
+    0%   {background-color:rgb(177, 13, 13); left:0px; top:0px;}
+    25%  {background-color:rgb(219, 14, 14); left:200px; top:0px;}
+    50%  {background-color:rgb(172, 17, 17); left:200px; top:200px;}
+    75%  {background-color:rgb(212, 49, 49); left:0px; top:200px;}
+    100% {background-color:rgb(180, 11, 11); left:0px; top:0px;}
+  }
+
+  @keyframes font-size {
+    0%   {font-size: 128px}
+    100%   {font-size: 156px}
+  }
